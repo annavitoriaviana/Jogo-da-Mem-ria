@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .games-container {
+    text-align: center;
+    background-color: #ff6347;
+    color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .game-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  button {
+    background-color: #32cd32;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #228b22;
+  }
+  
+  .game-content {
+    margin-top: 40px;
+  }
+  
+  #memory-game {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #ff6347;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #32cd32;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #228b22;
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .card.flipped {
+    background-color: #32cd32;
+    transform: rotateY(180deg);
+  }
+  
+  .card.matched {
+    background-color: #228b22;
+    pointer-events: none;
+  }
+  
+  .card img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
